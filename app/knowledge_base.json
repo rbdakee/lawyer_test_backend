@@ -1,0 +1,604 @@
+{
+  "questions": [
+    {
+      "id": 1,
+      "question": {
+        "kz": "Қазақстан Республикасының Конституциясы қашан қабылданды?",
+        "ru": "Когда была принята Конституция Республики Казахстан?"
+      },
+      "options": [
+        {
+          "kz": "1991 жылғы 16 желтоқсан",
+          "ru": "16 декабря 1991 года"
+        },
+        {
+          "kz": "1993 жылғы 28 қаңтар",
+          "ru": "28 января 1993 года"
+        },
+        {
+          "kz": "1995 жылғы 30 тамыз",
+          "ru": "30 августа 1995 года"
+        },
+        {
+          "kz": "1998 жылғы 7 қазан",
+          "ru": "7 октября 1998 года"
+        }
+      ],
+      "correct": 2,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
+      }
+    },
+    {
+      "id": 2,
+      "question": {
+        "kz": "Қазақстан Республикасының Конституциялық Заңдарын қай орган қабылдайды?",
+        "ru": "Какой орган принимает Конституционные законы Республики Казахстан?"
+      },
+      "options": [
+        {
+          "kz": "Қазақстан Республикасының Парламенті",
+          "ru": "Парламент Республики Казахстан"
+        },
+        {
+          "kz": "Қазақстан Республикасы Президенті",
+          "ru": "Президент Республики Казахстан"
+        },
+        {
+          "kz": "Қазақстан Республикасының Үкіметі",
+          "ru": "Правительство Республики Казахстан"
+        },
+        {
+          "kz": "Қазақстан Республикасының Конституциялық Кеңесі",
+          "ru": "Конституционный Совет Республики Казахстан"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris."
+      }
+    },
+    {
+      "id": 3,
+      "question": {
+        "kz": "Азаматтық процесте апелляциялық шағым қанша уақыт ішінде беріледі?",
+        "ru": "В течение какого срока подается апелляционная жалоба в гражданском процессе?"
+      },
+      "options": [
+        {
+          "kz": "10 күн",
+          "ru": "10 дней"
+        },
+        {
+          "kz": "15 күн",
+          "ru": "15 дней"
+        },
+        {
+          "kz": "1 ай",
+          "ru": "1 месяц"
+        },
+        {
+          "kz": "2 ай",
+          "ru": "2 месяца"
+        }
+      ],
+      "correct": 2,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum."
+      }
+    },
+    {
+      "id": 4,
+      "question": {
+        "kz": "Қазақстан Республикасы Конституциялық Кеңесінде қанша төраға бар?",
+        "ru": "Сколько председателей в Конституционном Совете Республики Казахстан?"
+      },
+      "options": [
+        {
+          "kz": "5 төраға",
+          "ru": "5 председателей"
+        },
+        {
+          "kz": "7 төраға",
+          "ru": "7 председателей"
+        },
+        {
+          "kz": "9 төраға",
+          "ru": "9 председателей"
+        },
+        {
+          "kz": "11 төраға",
+          "ru": "11 председателей"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+      }
+    },
+    {
+      "id": 5,
+      "question": {
+        "kz": "Азаматтық процесте жарысу принципі дегеніміз не?",
+        "ru": "Что означает принцип состязательности в гражданском процессе?"
+      },
+      "options": [
+        {
+          "kz": "Сот тараптардың құқықтары мен міндеттерін түсіндіруге міндетті",
+          "ru": "Суд обязан разъяснить сторонам их права и обязанности"
+        },
+        {
+          "kz": "Та Ihарпылар дәлелдер келтіруге және өз позициясын негіздеуге құқылы",
+          "ru": "Стороны вправе представлять доказательства и аргументировать свою позицию"
+        },
+        {
+          "kz": "Сот өз инициативасымен дәлелдер жинауға құқылы",
+          "ru": "Суд может собирать доказательства по собственной инициативе"
+        },
+        {
+          "kz": "Іс белгіленген мерзімде қаралуы тиіс",
+          "ru": "Дело должно быть рассмотрено в установленный срок"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium."
+      }
+    },
+    {
+      "id": 6,
+      "question": {
+        "kz": "Денсаулыққа зиян келтіргендік үшін талап етудің иектік мерзімі қанша?",
+        "ru": "Какой срок исковой давности для требований о возмещении вреда здоровью?"
+      },
+      "options": [
+        {
+          "kz": "1 жыл",
+          "ru": "1 год"
+        },
+        {
+          "kz": "2 жыл",
+          "ru": "2 года"
+        },
+        {
+          "kz": "3 жыл",
+          "ru": "3 года"
+        },
+        {
+          "kz": "Мерзімсіз",
+          "ru": "Без срока давности"
+        }
+      ],
+      "correct": 2,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit."
+      }
+    },
+    {
+      "id": 7,
+      "question": {
+        "kz": "Медиация дегеніміз не?",
+        "ru": "Что такое медиация?"
+      },
+      "options": [
+        {
+          "kz": "Дегелекте қатысушы арқылы дауды шешу тәсілі",
+          "ru": "Способ разрешения споров с участием посредника"
+        },
+        {
+          "kz": "Соттық қарау түрі",
+          "ru": "Вид судебного разбирательства"
+        },
+        {
+          "kz": "Соттық шешімді шағымдау процедурасы",
+          "ru": "Процедура обжалования судебного решения"
+        },
+        {
+          "kz": "Мемлекеттік бақылау формасы",
+          "ru": "Форма государственного контроля"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt."
+      }
+    },
+    {
+      "id": 8,
+      "question": {
+        "kz": "Мұраға ашылатын істі ашу үшін қандай құжат қажет?",
+        "ru": "Какой документ необходим для открытия наследственного дела?"
+      },
+      "options": [
+        {
+          "kz": "Тек мұрагердің паспорты",
+          "ru": "Только паспорт наследника"
+        },
+        {
+          "kz": "Мұра берушінің қайтыс болу туралы куәлігі",
+          "ru": "Свидетельство о смерти наследодателя"
+        },
+        {
+          "kz": "Мүлікті сатып алу келісім-шарты",
+          "ru": "Договор купли-продажи имущества"
+        },
+        {
+          "kz": "Табыс туралы справка",
+          "ru": "Справка о доходах"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit."
+      }
+    },
+    {
+      "id": 9,
+      "question": {
+        "kz": "'Кінәсіздік презумпциясы' термині не дегенді білдіреді?",
+        "ru": "Что означает термин 'презумпция невиновности'?"
+      },
+      "options": [
+        {
+          "kz": "Айыпталушы кері дәлелденгенше кінәлі деп саналады",
+          "ru": "Обвиняемый считается виновным до доказательства обратного"
+        },
+        {
+          "kz": "Айыпталушы заңды күшіне енген приговорға дейін кінәсіз деп саналады",
+          "ru": "Обвиняемый считается невиновным до вступления приговора в законную силу"
+        },
+        {
+          "kz": "Сот дәлелдер болған жағдайда айыпталушыны кінәлі деп тануы тиіс",
+          "ru": "Суд должен признать обвиняемого виновным при наличии доказательств"
+        },
+        {
+          "kz": "Айыпталушы өз кінәсіздігін дәлелдеуге міндетті",
+          "ru": "Обвиняемый обязан доказывать свою невиновность"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur."
+      }
+    },
+    {
+      "id": 10,
+      "question": {
+        "kz": "Азаматтық істе апелляциялық шағым беру мерзімі қанша?",
+        "ru": "Какой срок для подачи апелляционной жалобы по гражданскому делу?"
+      },
+      "options": [
+        {
+          "kz": "10 күн",
+          "ru": "10 дней"
+        },
+        {
+          "kz": "15 күн",
+          "ru": "15 дней"
+        },
+        {
+          "kz": "1 ай",
+          "ru": "1 месяц"
+        },
+        {
+          "kz": "2 ай",
+          "ru": "2 месяца"
+        }
+      ],
+      "correct": 2,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vel illum qui dolorem eum fugiat quo voluptas nulla pariatur."
+      }
+    },
+    {
+      "id": 11,
+      "question": {
+        "kz": "Альтернативті сот билігі дегеніміз не?",
+        "ru": "Что такое альтернативная подсудность?"
+      },
+      "options": [
+        {
+          "kz": "Та Ihаршының істі қарау үшін бірнеше соттардың біреуін таңдау құқығы",
+          "ru": "Право истца выбрать один из нескольких судов для рассмотрения дела"
+        },
+        {
+          "kz": "Аудандық соттың міндетті билігі",
+          "ru": "Обязательная подсудность районного суда"
+        },
+        {
+          "kz": "Жоғарғы Соттың арнайы билігі",
+          "ru": "Исключительная подсудность Верховного Суда"
+        },
+        {
+          "kz": "Жауаптың орналасқан жері бойынша билік",
+          "ru": "Подсудность по месту нахождения ответчика"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium."
+      }
+    },
+    {
+      "id": 12,
+      "question": {
+        "kz": "Адвокаттық қызметті жүргізу лицензиясын қай орган береді?",
+        "ru": "Какой орган выдает лицензию на осуществление адвокатской деятельности?"
+      },
+      "options": [
+        {
+          "kz": "Қазақстан Республикасы Әділет министрлігі",
+          "ru": "Министерство юстиции Республики Казахстан"
+        },
+        {
+          "kz": "Қазақстан Республикасы субъектісінің Адвокатура палатасы",
+          "ru": "Адвокатская палата субъекта Республики Казахстан"
+        },
+        {
+          "kz": "Қазақстан Республикасының Жоғарғы Соты",
+          "ru": "Верховный Суд Республики Казахстан"
+        },
+        {
+          "kz": "Прокуратура",
+          "ru": "Прокуратура"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      }
+    },
+    {
+      "id": 13,
+      "question": {
+        "kz": "Процестік құқықты мұралау дегеніміз не?",
+        "ru": "Что такое процессуальное правопреемство?"
+      },
+      "options": [
+        {
+          "kz": "Процесте тарапты басқа адамға ауыстыру",
+          "ru": "Замена стороны в процессе другим лицом"
+        },
+        {
+          "kz": "Та Ihаршының талабынан бас тарту",
+          "ru": "Отказ истца от иска"
+        },
+        {
+          "kz": "Жауаптының талапты мойындауы",
+          "ru": "Признание иска ответчиком"
+        },
+        {
+          "kz": "Қарым-қатынас туралы келісім жасау",
+          "ru": "Заключение мирового соглашения"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio nam libero tempore.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio nam libero tempore."
+      }
+    },
+    {
+      "id": 14,
+      "question": {
+        "kz": "Әкімшілік құқық бұзушылық ісі бойынша соттың қаулысын шағымдау мерзімі қанша?",
+        "ru": "Какой срок для обжалования постановления суда по делу об административном правонарушении?"
+      },
+      "options": [
+        {
+          "kz": "5 күн",
+          "ru": "5 дней"
+        },
+        {
+          "kz": "10 күн",
+          "ru": "10 дней"
+        },
+        {
+          "kz": "15 күн",
+          "ru": "15 дней"
+        },
+        {
+          "kz": "1 ай",
+          "ru": "1 месяц"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat."
+      }
+    },
+    {
+      "id": 15,
+      "question": {
+        "kz": "'Жоюға болмайтын презумпция' термині не дегенді білдіреді?",
+        "ru": "Что означает термин 'неопровержимая презумпция'?"
+      },
+      "options": [
+        {
+          "kz": "Жойылуға болмайтын презумпция",
+          "ru": "Презумпция, которая не может быть опровергнута"
+        },
+        {
+          "kz": "Дәлелдеуді талап етпейтін презумпция",
+          "ru": "Презумпция, которая не требует доказывания"
+        },
+        {
+          "kz": "Заңмен белгіленген жойылуға болмайтын презумпция",
+          "ru": "Презумпция, установленная законом без возможности опровержения"
+        },
+        {
+          "kz": "Тек тікелей дәлелдермен жойылатын презумпция",
+          "ru": "Презумпция, опровергаемая только прямыми доказательствами"
+        }
+      ],
+      "correct": 2,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facere possimus, omnis voluptas assumenda est, omnis dolor repellendus temporibus autem quibusdam et aut officiis debitis.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Facere possimus, omnis voluptas assumenda est, omnis dolor repellendus temporibus autem quibusdam et aut officiis debitis."
+      }
+    },
+    {
+      "id": 16,
+      "question": {
+        "kz": "Өткізілген иектік мерзімді қалпына келтіру туралы өтініш беру мерзімі қанша?",
+        "ru": "Какой срок для подачи заявления о восстановлении пропущенного срока исковой давности?"
+      },
+      "options": [
+        {
+          "kz": "Иектік мерзім ішінде",
+          "ru": "В течение срока исковой давности"
+        },
+        {
+          "kz": "Мерзім өткеннен кейін 6 ай ішінде",
+          "ru": "В течение 6 месяцев после истечения срока"
+        },
+        {
+          "kz": "Мерзім өткеннен кейін 1 жыл ішінде",
+          "ru": "В течение 1 года после истечения срока"
+        },
+        {
+          "kz": "Мерзімсіз",
+          "ru": "Без ограничения срока"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae."
+      }
+    },
+    {
+      "id": 17,
+      "question": {
+        "kz": "Қарсы талап дегеніміз не?",
+        "ru": "Что такое встречный иск?"
+      },
+      "options": [
+        {
+          "kz": "Жауаптының сол процесс ішінде та Ihаршыға қарсы талабы",
+          "ru": "Иск ответчика к истцу в том же процессе"
+        },
+        {
+          "kz": "Үшінші тұлғаның тараптарға қарсы талабы",
+          "ru": "Иск третьего лица к сторонам"
+        },
+        {
+          "kz": "Прокурордың азаматтардың құқықтарын қорғау үшін талабы",
+          "ru": "Иск прокурора в защиту прав граждан"
+        },
+        {
+          "kz": "Байқау ретіндегі талап",
+          "ru": "Иск в порядке надзора"
+        }
+      ],
+      "correct": 0,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias."
+      }
+    },
+    {
+      "id": 18,
+      "question": {
+        "kz": "Интеллектуалдық құқықтарды қорғау бойынша дауды қай орган қарайды?",
+        "ru": "Какой орган рассматривает споры о защите интеллектуальных прав?"
+      },
+      "options": [
+        {
+          "kz": "Тек арбитраждық соттар",
+          "ru": "Только арбитражные суды"
+        },
+        {
+          "kz": "Жалпы юрисдикциялық соттар және арбитраждық соттар",
+          "ru": "Суды общей юрисдикции и арбитражные суды"
+        },
+        {
+          "kz": "Тек жалпы юрисдикциялық соттар",
+          "ru": "Только суды общей юрисдикции"
+        },
+        {
+          "kz": "Тек Конституциялық Кеңес",
+          "ru": "Только Конституционный Совет"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique sunt.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident similique sunt."
+      }
+    },
+    {
+      "id": 19,
+      "question": {
+        "kz": "Азаматтық процесте диспозитивтілік принципі не дегенді білдіреді?",
+        "ru": "Что означает принцип диспозитивности в гражданском процессе?"
+      },
+      "options": [
+        {
+          "kz": "Сот шешім қабылдағанда тәуелсіз",
+          "ru": "Суд независим при принятии решений"
+        },
+        {
+          "kz": "Тараптар өз процессік құқықтарымен қаражат жүргізеді",
+          "ru": "Стороны распоряжаются своими процессуальными правами"
+        },
+        {
+          "kz": "Сот барлық дәлелдерді тексеруге міндетті",
+          "ru": "Суд обязан проверить все доказательства"
+        },
+        {
+          "kz": "Іс ашық сот отырысында қаралады",
+          "ru": "Дело рассматривается в открытом судебном заседании"
+        }
+      ],
+      "correct": 1,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga."
+      }
+    },
+    {
+      "id": 20,
+      "question": {
+        "kz": "Орындау парағына алу мерзімі қанша?",
+        "ru": "Какой срок для предъявления исполнительного листа ко взысканию?"
+      },
+      "options": [
+        {
+          "kz": "1 жыл",
+          "ru": "1 год"
+        },
+        {
+          "kz": "2 жыл",
+          "ru": "2 года"
+        },
+        {
+          "kz": "3 жыл",
+          "ru": "3 года"
+        },
+        {
+          "kz": "5 жыл",
+          "ru": "5 лет"
+        }
+      ],
+      "correct": 2,
+      "explanation": {
+        "kz": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio nam libero tempore, cum soluta nobis est eligendi.",
+        "ru": "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Et harum quidem rerum facilis est et expedita distinctio nam libero tempore, cum soluta nobis est eligendi."
+      }
+    }
+  ]
+}
