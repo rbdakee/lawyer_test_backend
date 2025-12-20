@@ -29,6 +29,16 @@ build/
 .env.local
 .env*.local
 
+# Credentials and secrets
+firebase-credentials.json
+*.json
+!package.json
+!package-lock.json
+!tsconfig.json
+!next.config.js
+!postcss.config.js
+!tailwind.config.js
+
 # Logs
 *.log
 npm-debug.log*
