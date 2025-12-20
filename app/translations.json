@@ -15,7 +15,35 @@
         "title": "Емтихан",
         "description": "Нағыз емтихан жағдайында тестілеңіз"
       },
-      "country": "Қазақстан Республикасы"
+      "country": "Қазақстан Республикасы",
+      "trainer": {
+        "title": "Тренажер",
+        "description": "Таңдаған тақырып бойынша жаттығу"
+      },
+      "admin": {
+        "title": "Админка",
+        "correctAnswer": "Дұрыс жауап",
+        "adminPanel": "Админ-панель",
+        "cancel": "Болдырмау",
+        "addQuestion": "Сұрақ қосу",
+        "questionLabel": "Сұрақ",
+        "variant": "Нұсқа",
+        "explanationLabel": "Түсіндірме",
+        "section": "Бөлім",
+        "saveChanges": "Өзгерістерді сақтау",
+        "createQuestion": "Сұрақ құру",
+        "edit": "Өңдеу",
+        "delete": "Жою",
+        "loading": "Жүктелуде...",
+        "previous": "Артқа",
+        "next": "Алға",
+        "pageInfo": "Бет",
+        "of": "/",
+        "total": "Барлығы",
+        "saveError": "Сұрақты сақтау кезінде қате",
+        "deleteError": "Сұрақты жою кезінде қате",
+        "deleteConfirm": "Сіз бұл сұрақты жойғыңыз келетініне сенімдісіз бе?"
+      }
     },
     "demo": {
       "title": "Демо режим",
@@ -30,6 +58,8 @@
       "previous": "Алдыңғы",
       "next": "Келесі",
       "homeButton": "Басты бетке",
+      "finishButton": "Аяқтау",
+      "unlimited": "Шектеусіз",
       "completed": {
         "title": "Демо режим аяқталды!",
         "correctAnswers": "Дұрыс жауаптар",
@@ -47,6 +77,12 @@
       "backButton": "Басты бетке оралу",
       "loading": "Сұрақтар жүктелуде...",
       "warning": "Назар аударыңыз: Емтихан кезінде түсіндірмелер көрсетілмейді.",
+      "timeLabel": "Уақыт",
+      "timeValue": "минут",
+      "questionsCount": "Сұрақтар саны",
+      "passingScore": "Өту баллы",
+      "timeWarning": "Назар аударыңыз: Уақыт біткеннен кейін емтихан автоматты түрде аяқталады.",
+      "unlimited": "Шектеусіз",
       "questionProgress": "Сұрақ",
       "answered": "Жауап берілген",
       "correctAnswer": "Дұрыс жауап",
@@ -64,8 +100,85 @@
         "home": "Басты бетке"
       }
     },
+    "trainer": {
+      "title": "Тренажер",
+      "description": "Таңдаған тақырып бойынша жаттығу",
+      "totalQuestions": "Барлық сұрақтар",
+      "startButton": "Бастау",
+      "backButton": "Басты бетке оралу",
+      "loading": "Сұрақтар жүктелуде...",
+      "questionProgress": "Сұрақ",
+      "correctAnswer": "Дұрыс жауап",
+      "wrongAnswer": "Қате жауап",
+      "previous": "Алдыңғы",
+      "next": "Келесі",
+      "homeButton": "Басты бетке",
+      "finishButton": "Аяқтау",
+      "selectSection": "Тақырып таңдаңыз",
+      "unlimited": "Шектеусіз",
+      "completed": {
+        "title": "Тренировка аяқталды",
+        "correctAnswers": "Дұрыс жауаптар",
+        "wrongAnswers": "Қате жауаптар",
+        "viewResults": "Нәтижелерді қарау",
+        "restart": "Қайта бастау",
+        "home": "Басты бетке"
+      }
+    },
+    "profile": {
+      "title": "Профиль",
+      "greeting": "Сәлеметсіз бе",
+      "logout": "Шығу",
+      "examHistory": "Емтихан тарихы",
+      "noExams": "Әлі өткізілген емтихандар жоқ",
+      "statistics": "Тақырыптар бойынша статистика",
+      "correct": "Дұрыс",
+      "total": "Барлығы",
+      "viewDetails": "Толық мәліметтерді қарау →",
+      "login": "Кіру",
+      "register": "Тіркелу",
+      "loginTitle": "Кіру",
+      "registerTitle": "Тіркелу",
+      "phone": "Телефон",
+      "password": "Пароль",
+      "name": "Аты",
+      "noAccount": "Аккаунт жоқ па? Тіркелу",
+      "hasAccount": "Аккаунт бар ма? Кіру",
+      "home": "Басты бетке",
+      "loading": "Жүктелуде..."
+    },
+    "examDetails": {
+      "examResults": "Емтихан нәтижелері",
+      "demoResults": "Демо нәтижелері",
+      "trainerResults": "Тренировка нәтижелері",
+      "result": "Нәтиже",
+      "time": "Уақыт",
+      "date": "Күні",
+      "passed": "Өтті",
+      "failed": "Өтпеді",
+      "backToProfile": "Профильге оралу"
+    },
+    "results": {
+      "title": "Нәтижелер",
+      "explanationTitle": "Түсіндірме"
+    },
     "common": {
-      "of": "/"
+      "of": "/",
+      "loading": "Жүктелуде...",
+      "result": "Нәтиже",
+      "time": "Уақыт",
+      "correctAnswers": "Дұрыс жауаптар",
+      "wrongAnswers": "Қате жауаптар",
+      "answered": "Жауап берілген",
+      "notAnswered": "Жауап берілмеген",
+      "sendReport": "Есеп жіберу",
+      "reportPlaceholder": "Есеп мәтінін енгізіңіз...",
+      "pleaseEnterReport": "Есеп мәтінін енгізіңіз",
+      "needAuth": "Кіру қажет",
+      "reportSent": "Есеп жіберілді",
+      "errorSendingReport": "Есеп жіберу кезінде қате",
+      "cancel": "Болдырмау",
+      "errorSubmittingResults": "Нәтижелерді жіберу кезінде қате"
     }
   },
   "ru": {
@@ -84,11 +197,39 @@
         "title": "Экзамен",
         "description": "Протестируйте себя в реальных условиях экзамена"
       },
-      "country": "Республика Казахстан"
+      "country": "Республика Казахстан",
+      "trainer": {
+        "title": "Тренажер",
+        "description": "Тренировка по выбранной теме"
+      },
+      "admin": {
+        "title": "Админка",
+        "correctAnswer": "Правильный ответ",
+        "adminPanel": "Админ-панель",
+        "cancel": "Отмена",
+        "addQuestion": "Добавить вопрос",
+        "questionLabel": "Вопрос",
+        "variant": "Вариант",
+        "explanationLabel": "Объяснение",
+        "section": "Раздел",
+        "saveChanges": "Сохранить изменения",
+        "createQuestion": "Создать вопрос",
+        "edit": "Редактировать",
+        "delete": "Удалить",
+        "loading": "Загрузка...",
+        "previous": "Назад",
+        "next": "Вперед",
+        "pageInfo": "Страница",
+        "of": "из",
+        "total": "всего",
+        "saveError": "Ошибка при сохранении вопроса",
+        "deleteError": "Ошибка при удалении вопроса",
+        "deleteConfirm": "Вы уверены, что хотите удалить этот вопрос?"
+      }
     },
     "demo": {
-      "title": "Демо режим",
-      "description": "В демо режиме вы сразу увидите правильность вашего ответа и объяснение.",
+        "title": "Демо режим",
+        "description": "В демо режиме вы сразу увидите правильность вашего ответа и объяснение.",
       "totalQuestions": "Всего вопросов",
       "startButton": "Начать",
       "backButton": "Вернуться на главную",
@@ -99,6 +240,8 @@
       "previous": "Предыдущий",
       "next": "Следующий",
       "homeButton": "На главную",
+      "finishButton": "Завершить",
+      "unlimited": "Неограничено",
       "completed": {
         "title": "Демо режим завершен!",
         "correctAnswers": "Правильные ответы",
@@ -116,6 +259,12 @@
       "backButton": "Вернуться на главную",
       "loading": "Загрузка вопросов...",
       "warning": "Внимание: Во время экзамена объяснения не показываются.",
+      "timeLabel": "Время",
+      "timeValue": "минут",
+      "questionsCount": "Количество вопросов",
+      "passingScore": "Проходной балл",
+      "timeWarning": "Внимание: После истечения времени экзамен автоматически завершится.",
+      "unlimited": "Неограничено",
       "questionProgress": "Вопрос",
       "answered": "Отвечено",
       "correctAnswer": "Правильный ответ",
@@ -133,8 +282,87 @@
         "home": "На главную"
       }
     },
+    "trainer": {
+      "title": "Тренажер",
+      "description": "Тренировка по выбранной теме",
+      "totalQuestions": "Всего вопросов",
+      "startButton": "Начать",
+      "backButton": "Вернуться на главную",
+      "loading": "Загрузка вопросов...",
+      "questionProgress": "Вопрос",
+      "correctAnswer": "Правильный ответ",
+      "wrongAnswer": "Неправильный ответ",
+      "previous": "Предыдущий",
+      "next": "Следующий",
+      "homeButton": "На главную",
+      "finishButton": "Завершить",
+      "selectSection": "Выберите раздел",
+      "unlimited": "Неограничено",
+      "completed": {
+        "title": "Тренировка завершена",
+        "correctAnswers": "Правильные ответы",
+        "wrongAnswers": "Неправильные ответы",
+        "viewResults": "Просмотреть результаты",
+        "restart": "Начать заново",
+        "home": "На главную"
+      }
+    },
+    "profile": {
+      "title": "Профиль",
+      "greeting": "Здравствуйте",
+      "logout": "Выйти",
+      "examHistory": "История экзаменов",
+      "noExams": "Пока нет пройденных экзаменов",
+      "statistics": "Статистика по разделам",
+      "correct": "Правильных",
+      "total": "Всего",
+      "viewDetails": "Посмотреть детали →",
+      "login": "Войти",
+      "register": "Зарегистрироваться",
+      "loginTitle": "Вход",
+      "registerTitle": "Регистрация",
+      "phone": "Телефон",
+      "password": "Пароль",
+      "name": "Имя",
+      "noAccount": "Нет аккаунта? Зарегистрироваться",
+      "hasAccount": "Уже есть аккаунт? Войти",
+      "home": "На главную",
+      "loading": "Загрузка...",
+      "goToProfile": "Перейти к профилю",
+      "submitting": "Отправка результатов..."
+    },
+    "examDetails": {
+      "examResults": "Результаты экзамена",
+      "demoResults": "Результаты демо",
+      "trainerResults": "Результаты тренировки",
+      "result": "Результат",
+      "time": "Время",
+      "date": "Дата",
+      "passed": "Сдан",
+      "failed": "Не сдан",
+      "backToProfile": "Назад к профилю"
+    },
+    "results": {
+      "title": "Результаты",
+      "explanationTitle": "Объяснение"
+    },
     "common": {
-      "of": "из"
+      "of": "из",
+      "loading": "Загрузка...",
+      "result": "Результат",
+      "time": "Время",
+      "correctAnswers": "Правильные ответы",
+      "wrongAnswers": "Неправильные ответы",
+      "answered": "Отвечено",
+      "notAnswered": "Не отвечено",
+      "sendReport": "Отправить отчет",
+      "reportPlaceholder": "Введите текст отчета...",
+      "pleaseEnterReport": "Пожалуйста, введите текст отчета",
+      "needAuth": "Необходимо авторизоваться",
+      "reportSent": "Отчет отправлен",
+      "errorSendingReport": "Ошибка при отправке отчета",
+      "cancel": "Отмена",
+      "errorSubmittingResults": "Ошибка при отправке результатов"
     }
   }
 }
