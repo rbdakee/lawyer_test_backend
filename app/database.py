@@ -5,10 +5,6 @@ import json
 from typing import Optional
 
 
-# Lazy initialization для Firebase
-_db = None
-
-
 # Инициализация Firebase
 def init_firebase():
     """Инициализирует Firebase Admin SDK"""
@@ -38,18 +34,8 @@ def init_firebase():
     return firestore.client()
 
 
-def get_db():
-    """Получить экземпляр Firestore (lazy initialization)"""
-    global _db
-    if _db is None:
-        _db = init_firebase()
-    return _db
-
-
-# Для обратной совместимости - используем функцию вместо прямого доступа
-def db():
-    """Получить экземпляр Firestore (alias для get_db)"""
-    return get_db()
+# Получаем экземпляр Firestore (инициализация при импорте модуля)
+db = init_firebase()
 
 
 # Коллекции
@@ -61,5 +47,5 @@ REPORTS_COLLECTION = "reports"
 
 def get_collection(collection_name: str):
     """Получить ссылку на коллекцию"""
-    return get_db().collection(collection_name)
+    return db.collection(collection_name)
 

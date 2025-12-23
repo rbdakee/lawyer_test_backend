@@ -9,7 +9,7 @@ from typing import List, Optional
 from datetime import datetime
 from dotenv import load_dotenv
 
-from .database import get_db, USERS_COLLECTION, QUESTIONS_COLLECTION, EXAMS_COLLECTION, REPORTS_COLLECTION
+from .database import db, USERS_COLLECTION, QUESTIONS_COLLECTION, EXAMS_COLLECTION, REPORTS_COLLECTION
 from firebase_admin import firestore
 from .models import (
     UserRegister, UserLogin, UserResponse, TokenResponse,
@@ -73,7 +73,7 @@ def load_translations() -> dict:
     
     try:
         # Пытаемся загрузить из Firebase
-        translations_ref = get_db().collection(TRANSLATIONS_COLLECTION)
+        translations_ref = db.collection(TRANSLATIONS_COLLECTION)
         docs = translations_ref.get()
         
         if docs:
@@ -112,8 +112,7 @@ def read_root():
 async def health_check():
     """Health check endpoint для keep-alive и мониторинга"""
     try:
-        # Проверяем подключение к Firebase (lazy init)
-        db = get_db()
+        # Проверяем подключение к Firebase
         # Простая проверка доступности
         return {
             "status": "ok",
@@ -162,7 +161,7 @@ def get_legislation_sections(lang: str = "kz"):
 async def register(user_data: UserRegister):
     """Регистрация нового пользователя"""
     # Проверяем, существует ли пользователь с таким телефоном
-    users_ref = get_db().collection(USERS_COLLECTION)
+    users_ref = db.collection(USERS_COLLECTION)
     query = users_ref.where("phone", "==", user_data.phone).limit(1).get()
     
     if query:
@@ -180,7 +179,7 @@ async def register(user_data: UserRegister):
         "created_at": datetime.utcnow()
     }
     
-    doc_ref = get_db().collection(USERS_COLLECTION).add(user_dict)
+    doc_ref = db.collection(USERS_COLLECTION).add(user_dict)
     user_id = doc_ref[1].id
     
     # Создаем токен
@@ -201,7 +200,7 @@ async def register(user_data: UserRegister):
 async def login(user_data: UserLogin):
     """Вход пользователя"""
     # Ищем пользователя по телефону
-    users_ref = get_db().collection(USERS_COLLECTION)
+    users_ref = db.collection(USERS_COLLECTION)
     query = users_ref.where("phone", "==", user_data.phone).limit(1).get()
     
     if not query:
@@ -265,7 +264,7 @@ async def get_questions(
     limit: Optional[int] = None
 ):
     """Получить вопросы (с фильтрацией по разделу)"""
-    questions_ref = get_db().collection(QUESTIONS_COLLECTION)
+    questions_ref = db.collection(QUESTIONS_COLLECTION)
     
     if section:
         query = questions_ref.where("section", "==", section.value)
@@ -285,7 +284,7 @@ async def get_questions(
 @app.get("/api/questions/demo", response_model=List[QuestionResponse])
 async def get_demo_questions(lang: str = "kz"):
     """Получить 20 случайных вопросов для демо режима"""
-    questions_ref = get_db().collection(QUESTIONS_COLLECTION)
+    questions_ref = db.collection(QUESTIONS_COLLECTION)
     all_questions = questions_ref.get()
     
     if len(all_questions) == 0:
@@ -301,7 +300,7 @@ async def get_demo_questions(lang: str = "kz"):
 @app.get("/api/questions/exam", response_model=List[QuestionResponse])
 async def get_exam_questions(lang: str = "kz"):
     """Получить 100 случайных вопросов для экзамена"""
-    questions_ref = get_db().collection(QUESTIONS_COLLECTION)
+    questions_ref = db.collection(QUESTIONS_COLLECTION)
     all_questions = questions_ref.get()
     
     if len(all_questions) == 0:
@@ -320,7 +319,7 @@ async def get_trainer_questions(
     lang: str = "kz"
 ):
     """Получить вопросы для тренажера по конкретному разделу"""
-    questions_ref = get_db().collection(QUESTIONS_COLLECTION)
+    questions_ref = db.collection(QUESTIONS_COLLECTION)
     query = questions_ref.where("section", "==", section.value)
     questions = query.get()
     
@@ -331,7 +330,7 @@ async def get_trainer_questions(
 @app.get("/api/questions/{question_id}", response_model=QuestionResponse)
 async def get_question(question_id: str, lang: str = "kz"):
     """Получить вопрос по ID"""
-    question_doc = get_db().collection(QUESTIONS_COLLECTION).document(question_id).get()
+    question_doc = db.collection(QUESTIONS_COLLECTION).document(question_id).get()
     
     if not question_doc.exists:
         raise HTTPException(
@@ -352,7 +351,7 @@ async def submit_exam(
     """Отправить результаты экзамена"""
     try:
         # Получаем вопросы для проверки ответов
-        questions_ref = get_db().collection(QUESTIONS_COLLECTION)
+        questions_ref = db.collection(QUESTIONS_COLLECTION)
         question_ids = [ans.question_id for ans in exam_data.answers]
         
         # Получаем все вопросы
@@ -413,7 +412,7 @@ async def submit_exam(
     }
     
     try:
-        doc_ref = get_db().collection(EXAMS_COLLECTION).add(exam_dict)
+        doc_ref = db.collection(EXAMS_COLLECTION).add(exam_dict)
         exam_id = doc_ref[1].id
         
         return ExamResult(
@@ -441,7 +440,7 @@ async def get_exam_history(
     current_user: UserResponse = Depends(get_current_user)
 ):
     """Получить историю экзаменов пользователя"""
-    exams_ref = get_db().collection(EXAMS_COLLECTION)
+    exams_ref = db.collection(EXAMS_COLLECTION)
     # Используем только where, без order_by, чтобы избежать требования индекса
     # Сортировку делаем в Python
     query = exams_ref.where("user_id", "==", current_user.id)
@@ -493,7 +492,7 @@ async def get_exam_details(
 ):
     """Получить детали экзамена с вопросами и ответами"""
     try:
-        exam_doc = get_db().collection(EXAMS_COLLECTION).document(exam_id).get()
+        exam_doc = db.collection(EXAMS_COLLECTION).document(exam_id).get()
         
         if not exam_doc.exists:
             raise HTTPException(
@@ -511,7 +510,7 @@ async def get_exam_details(
             )
         
         # Получаем вопросы и ответы
-        questions_ref = get_db().collection(QUESTIONS_COLLECTION)
+        questions_ref = db.collection(QUESTIONS_COLLECTION)
         answers = exam_data.get("answers", [])
         
         questions_with_answers = []
@@ -570,7 +569,7 @@ async def create_report(
         "processed": False
     }
     
-    doc_ref = get_db().collection(REPORTS_COLLECTION).add(report_dict)
+    doc_ref = db.collection(REPORTS_COLLECTION).add(report_dict)
     
     return {"id": doc_ref[1].id, "message": "Отчет создан"}
 
@@ -589,7 +588,7 @@ async def get_admin_questions(
     if page_size < 1 or page_size > 100:
         page_size = 10
     
-    questions_ref = get_db().collection(QUESTIONS_COLLECTION)
+    questions_ref = db.collection(QUESTIONS_COLLECTION)
     all_questions = questions_ref.get()
     
     # Получаем общее количество вопросов
@@ -650,11 +649,11 @@ async def create_question(
         "created_at": datetime.utcnow()
     }
     
-    doc_ref = get_db().collection(QUESTIONS_COLLECTION).add(question_dict)
+    doc_ref = db.collection(QUESTIONS_COLLECTION).add(question_dict)
     question_id = doc_ref[1].id
     
     # Получаем созданный вопрос для возврата
-    question_doc = get_db().collection(QUESTIONS_COLLECTION).document(question_id).get()
+    question_doc = db.collection(QUESTIONS_COLLECTION).document(question_id).get()
     return format_question_for_language(question_doc, lang)
 
 
@@ -666,7 +665,7 @@ async def update_question(
     current_user: UserResponse = Depends(get_current_admin_user)
 ):
     """Обновить вопрос (только для админов)"""
-    question_ref = get_db().collection(QUESTIONS_COLLECTION).document(question_id)
+    question_ref = db.collection(QUESTIONS_COLLECTION).document(question_id)
     question_doc = question_ref.get()
     
     if not question_doc.exists:
@@ -703,7 +702,7 @@ async def delete_question(
     current_user: UserResponse = Depends(get_current_admin_user)
 ):
     """Удалить вопрос (только для админов)"""
-    question_ref = get_db().collection(QUESTIONS_COLLECTION).document(question_id)
+    question_ref = db.collection(QUESTIONS_COLLECTION).document(question_id)
     question_doc = question_ref.get()
     
     if not question_doc.exists:
